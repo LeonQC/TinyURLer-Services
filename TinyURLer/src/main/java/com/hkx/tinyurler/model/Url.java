@@ -19,7 +19,9 @@ public class Url {
 
     @Id
     private String id;
+    private String title;
     private String originalUrl;
     private String shortedUrl;
+    private String qrcode;
 
 }

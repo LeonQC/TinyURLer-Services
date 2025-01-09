@@ -9,5 +9,6 @@ public interface UrlService {
     UrlDto longToShort(String longUrl, String title);
     String shortToLong(String shortUrlId);
     List<UrlDto> getAllUrls();
+    void deleteUrl(String shortUrl);
 
 }

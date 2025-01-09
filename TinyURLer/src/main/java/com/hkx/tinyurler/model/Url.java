@@ -24,4 +24,6 @@ public class Url {
     private String shortedUrl;
     private String qrcode;
 
+    private String owner;
+
 }

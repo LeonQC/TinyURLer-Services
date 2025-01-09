@@ -14,8 +14,9 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**") // 指定允许跨域的路径
-                        .allowedOrigins("http://localhost:3000", "http://localhost:5173") // 指定允许的前端地址
-                        .allowedMethods("GET", "POST", "PUT", "DELETE") // 指定允许的 HTTP 方法
+                        .allowedOrigins("http://localhost:3000", "http://localhost:5173", "http://frontend:3000") // 指定允许的前端地址
+                        .allowedMethods("GET", "POST", "PUT", "DELETE",  "OPTIONS") // 指定允许的 HTTP 方法
+                        .allowedHeaders("*") // 允许所有请求头
                         .allowCredentials(true); // 如果前端需要发送 Cookie 或认证信息
             }
         };

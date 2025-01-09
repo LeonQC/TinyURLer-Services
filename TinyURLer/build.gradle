@@ -35,6 +35,24 @@ dependencies {
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0' // 对于 Spring MVC 项目
     implementation 'com.google.zxing:core:3.5.1'
     implementation 'com.google.zxing:javase:3.5.1'
+    // Spring Security Starter
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    // JWT Dependencies
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+
+    // Jsoup: HTML parser library for Java
+    implementation 'org.jsoup:jsoup:1.15.4'
+
+    implementation 'com.github.vladimir-bukhtoyarov:bucket4j-core:8.0.1'
+
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
 
 }
 

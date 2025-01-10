@@ -1,7 +1,14 @@
 package com.hkx.tinyurler.service;
 
+import com.hkx.tinyurler.dto.response.UrlDto;
+import com.hkx.tinyurler.model.Url;
+
+import java.util.List;
+
 public interface UrlService {
-    String longToShort(String longUrl);
+    UrlDto longToShort(String longUrl, String title);
     String shortToLong(String shortUrlId);
+    List<UrlDto> getAllUrls();
+    void deleteUrl(String shortUrl);
 
 }
